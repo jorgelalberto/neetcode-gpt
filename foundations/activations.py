@@ -9,4 +9,4 @@ class Solution:
         return np.round(z, decimals=5, out=z)
 
     def relu(self, z: NDArray[np.float64]) -> NDArray[np.float64]:
-        return np.maximum(z, 0)
+        return np.maximum(z, 0, out=z)
